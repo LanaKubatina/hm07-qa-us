@@ -28,3 +28,21 @@ To run the tests, follow these steps:
 4. Run the Tests:
 - Execute the tests by running npx jest in the terminal.
 - Jest will automatically find and run all test files.
+
+5. Coding Principles and Best Practices
+
+Naming Conventions
+- Variables: Follow the camelCase convention for variable names (e.g., productCount, responseStatusCode).
+- Functions: Function names start with a verb to clearly indicate the action they perform (e.g., fetchData, updateKit).
+
+Variable Declaration
+let vs const:
+- Use const to declare variables whose values should not change after initialization. This ensures immutability where applicable (e.g., const config = require('../config');).
+- Use let for variables whose values are expected to change (e.g., let responseStatusCode;).
+
+Comments
+- Comments are used to explain the purpose of complex logic or to provide context where necessary. This improves code readability and maintainability.
+
+Test Structure
+- Each test case is clearly named to describe its purpose and expected outcome.
+- Tests are organized logically by HTTP request types (GET, POST, PUT, DELETE).
