@@ -2,19 +2,40 @@
 const config = require('../config');
 
 const requestBody = {
-    // put your body here
-}
+    "cardId": 1, 
+    "name": "NewYear" 
+} 
 
-test('', async () => {
+test('Should return 201 status code', async () => {
+	let responseStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/your/endpoint`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits`, {
 			method: 'POST',
 			headers: {
 			'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(requestBody)
-		});
+		}); 
+		responseStatusCode = response.status;
 	} catch (error) {
 		console.error(error);
 	}
+	expect(responseStatusCode).toBe(201);
+});
+
+test('Body should contain the name of the card', async () => {
+	let cardName;
+    try {
+		const response = await fetch(`${config.API_URL}/api/v1/kits`, {
+			method: 'POST',
+			headers: {
+			'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(requestBody)
+		}); 
+		cardName = await response.json();
+	} catch (error) {
+		console.error(error);
+	}
+	expect(cardName.card.name).toBe("For the situation");
 });
