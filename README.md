@@ -1,4 +1,3 @@
-# Sprint 7 project
 API Testing for the Urban Grocer Web App
 
 Project Description
