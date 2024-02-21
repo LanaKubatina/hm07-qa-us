@@ -3,7 +3,7 @@ const config = require('../config');
 
 const requestBody = {
     "cardId": 1, 
-    "name": "NewYear" 
+    "name": "Soccer"
 } 
 
 test('Should return 201 status code', async () => {
