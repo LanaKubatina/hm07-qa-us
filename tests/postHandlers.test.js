@@ -2,8 +2,8 @@
 const config = require('../config');
 
 const requestBody = {
-    "cardId": 1, 
-    "name": "Soccer"
+    "cardId": 2, 
+    "name": "Birthday"
 } 
 
 test('Should return 201 status code', async () => {
@@ -37,5 +37,5 @@ test('Body should contain the name of the card', async () => {
 	} catch (error) {
 		console.error(error);
 	}
-	expect(cardName.card.name).toBe("For the situation");
+	expect(cardName.card.name).toBe("Prepare a dish");
 });

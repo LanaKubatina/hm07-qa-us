@@ -8,13 +8,13 @@ const requestBody = {
 		  "quantity": 1
 		}
 	  ],
-	  "name": "Soccer"
+	  "name": "Anniversary"
 }
 
 test('Should return 200 status code', async () => {
 	let responseStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/10`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/9`, {
 			method: 'PUT',
 			headers: {
 			'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ test('Should return 200 status code', async () => {
 test('Should check if the kit is updated', async () => {
 	let updateValue;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/10`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/9`, {
 			method: 'PUT',
 			headers: {
 			'Content-Type': 'application/json'
