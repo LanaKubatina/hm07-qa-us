@@ -4,7 +4,7 @@ const config = require('../config');
 test('Should return 200 status code', async () => {
 	let responseStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/1`, {
 			method: 'DELETE',
 		});
 		responseStatusCode = response.status;
@@ -17,7 +17,7 @@ test('Should return 200 status code', async () => {
 test('Should check if the kit is deleted', async () => {
 	let updateValue;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/1`, {
 			method: 'DELETE',
 		});
 		updateValue = await response.json();
