@@ -22,13 +22,7 @@ The Urban Grocers API is a backend service for an online grocery shopping platfo
 - View and modify orders,
 - Delete carts when needed.
 
-The API is crucial for handling grocery orders efficiently and ensuring seamless interactions between users and the system.
-
-The app also has the unique features:
-- **Product Management:** Users can add, remove, and update grocery items in their carts.
-- **Delivery Calculation**: The system determines whether fast delivery is available and calculates the cost dynamically.
-- **Order Validation:** Ensures correct handling of products, order weights, and item limits.
-- **Data Handling:** Supports various input formats, preventing invalid entries.
+This project also involves **both manual and automated UI testing**, focusing on validating the app's functionality to ensure a seamless user experience. The API is crucial for handling grocery orders efficiently and ensuring seamless interactions between users and the system.
 
 ## Manual API Testing ([Checklist](https://docs.google.com/spreadsheets/d/1DrQHm3GEv9J0uyn5pXegBEUGGx84yDLC8GosU0rwt6U/edit?usp=sharing))
 I conducted comprehensive API validation to ensure the system handled grocery orders correctly. My testing covered endpoint functionality, input validation, and business logic compliance.
