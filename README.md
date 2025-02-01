@@ -21,7 +21,8 @@ The Urban Grocers API is a backend service for an online grocery shopping platfo
 - Check out and arrange delivery,
 - View and modify orders,
 - Delete carts when needed.
-- The API is crucial for handling grocery orders efficiently and ensuring seamless interactions between users and the system.
+
+The API is crucial for handling grocery orders efficiently and ensuring seamless interactions between users and the system.
 
 The app also has the unique features:
 - **Product Management:** Users can add, remove, and update grocery items in their carts.
